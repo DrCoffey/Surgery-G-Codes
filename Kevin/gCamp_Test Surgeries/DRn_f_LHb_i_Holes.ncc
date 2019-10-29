@@ -1,0 +1,60 @@
+% Created 2019-Oct-29
+% Drill 1.2 mm holes at 0.3 mm per cycle
+
+% Injection      ML      AP      DV      Angle
+% ---------     ----    ----    ----    -------
+% LHb_i_Right   +0.75   -3.6    +5.25   +10
+% DRn_f         +0      -7.8    +6.25   +0
+
+
+G92 X0 Y0 Z0
+G1 Z3 F100
+
+% LHb_i_Right
+G1 X1.676 Y-3.6 Z3 F100
+F10
+G4 P4
+G1 Z0
+G4 P1
+G1 Z-0.3
+G4 P1
+G1 Z0
+G4 P1
+G1 Z-0.6
+G4 P1
+G1 Z0
+G4 P1
+G1 Z-0.9
+G4 P1
+G1 Z0
+G4 P1
+G1 Z-1.2
+G4 P1
+G1 Z0
+G1 Z3 F100
+M00
+
+% DRn_f
+G1 X0 Y-7.8 Z3 F100
+F10
+G4 P4
+G1 Z0
+G4 P1
+G1 Z-0.3
+G4 P1
+G1 Z0
+G4 P1
+G1 Z-0.6
+G4 P1
+G1 Z0
+G4 P1
+G1 Z-0.9
+G4 P1
+G1 Z0
+G4 P1
+G1 Z-1.2
+G4 P1
+G1 Z0
+G1 Z3 F100
+M00
+
